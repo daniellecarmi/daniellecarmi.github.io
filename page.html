@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Project name</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <script src="mainJs.js"></script>
+
+    <script>
+        "use strict";
+        var projectImages = ["media/shatteredDreams.jpg","media/text.png","media/flocking.png","media/chess.jpg","media/ed.jpg","media/dragonWater.jpg"];  
+        var galCaptions = [1,2,3,4,5,6];
+        var links = ["shattered.html","page.html","page.html","page.html","page.html","page.html"];  
+
+        window.onload = init;
+    </script> 
+</head>
+
+<body>
+
+<!--arrows for lightbox-->
+<div id="arrows" style="display:none">
+    <img id="lightboxLeft" class="arrows" style="z-index: 2" src="media/left.png" alt="image">
+    <img id="lightboxRight" class="arrows"  style="z-index: 2" src="media/right.png" alt="image">
+</div>
+
+<!--the lighbox for the gallery-->
+<div id="Lightbox" class="lightbox" style="display:none">
+    <ul>
+        <li>
+            <img id="lightboxImage" src="" alt="image">
+            <p id="lightboxCaption"></p>
+        </li>
+    </ul>
+</div>
+    
+
+<section id="main">
+    
+     <!--page header for the site-->
+    <header>
+        <h3 class="name">~ Danielle Carmi</h3>
+        <div class="image center third hoverScale"><a href="index.html">
+            <img src="media/logo.png" alt="image">
+        </a></div>
+        
+        <section id="nav">
+	   		<ul>
+                <li><a  href="index.html#main">Home</a></li>
+	   			<li ><a href="index.html#about">About</a></li>
+	   			<li ><a href="index.html#work" >Work</a></li>
+	   			<li ><a href="index.html#contact">Contact</a></li>
+                <p class="center locator">- Project Name -</p>
+	   		</ul>
+        </section>
+    </header>
+            <div id="dividerTop" class="yellow" ></div>
+
+    <!--project overiew-->
+    <section id="title" class="yellow"><div class="container">
+        <div class="right">
+            <img src="media/dragonS.png" alt="image">
+        </div>
+        
+        <div class="left center">
+            <h2>Project name</h2>
+            <p> what is this project</p>
+        </div>
+        <p class="clear"></p>
+    </div></section>
+    
+    <!--screens / media-->
+    <section id="screens" class="green">
+        <div class="container center">
+            <h2>Screens</h2>
+            <p> - project in action - </p>
+        </div>
+        
+        <!--generate image gallery-->
+        <div id="Gallery" class="center grid gallery"></div>
+        
+        <!--back to top-->
+        <div class="container center">
+            <p><a href="#main" class="center">back to top.</a></p>
+        </div>
+    </section>
+    
+    <!--footer of page-->
+    <div id="dividerBottom" class="green"></div>
+    <footer>
+        <div class="container">
+            <a href="notes.html" class="rightside">Notes</a>
+            <p class="center">- &copy; Danielle Carmi -</p>
+            <p class="clear"></p>
+    </div></footer>
+
+</section>
+</body>
+</html>

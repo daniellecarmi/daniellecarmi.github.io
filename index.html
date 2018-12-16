@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Danielle Carmi</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="mainJs.js"></script>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <script>
+        "use strict";
+        var projectImages = ["media/shatteredDreams.jpg","media/shatteredSC2.png", 'media/shatteredUI.png',"media/designDoc.png","media/betaScreen.png", 'media/betarangers_art.png', 'media/floatingCity.png', 'media/earthResource.png','media/city.png','media/waterResource.png','media/airResource.png','media/dragonWater.jpg', 'media/banner.png','media/17.png', 'media/lvl.png', 'media/lvl (done).png', 'media/JJ_lvl.jpg','media/JJ_lvl-flow.jpg', 'media/ziggurat.png','media/sketch.png','media/sketch2.JPG','media/raikou.JPG','media/glass-archer.png','media/glass-mage.png','media/glass-ninja.png','media/glass-warrior.png','media/ed.jpg', 'media/chess.jpg' ];  
+        var galCaptions = ['Project: Shattered Dreams','Shatered Dreams Screenshot', 'Shattered Dreams UI','Project: BetaRangers', 'BetaRangers Screenshot','BetaRangers Skills','Gibraltar Concept: air-city', 'Gibraltar Concept: resource', 'Gibraltar Concept: city', 'Gibraltar Concept: water-resource','Gibraltar Concept: air-resource','Dragons: Watercolor & Pencil', 'Emblem: Digital/Pen', 'Sea-Creature: Digital/Pen', 'Level Design: Kirby Sketch','Kirby Level Final', 'Level Design: Jazz Jackrabbit', 'JJ flow sketch','Ur-Ziggurat Model','Chimera Sketch: Pencil','Dragon Sketch: Pencil','Raikou Sketch: Pencil', 'Shattered Dreams: Archer Concept','Shattered Dreams: Mage Concept','Shattered Dreams: Ninja Concept','Shattered Dreams: Warrior Sketch','3D Model: Lego Ed','3D Model: Splatoon/Zelda Chess'];
+      
+        window.onload = init;
+    </script> 
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <!--arrows for lightbox-->
+<div id="arrows" style="display:none">
+    <img id="lightboxLeft" class="arrows" style="z-index: 2" src="media/left.png" alt="image">
+    <img id="lightboxRight" class="arrows"  style="z-index: 2" src="media/right.png" alt="image">
+</div>
+
+<!--the lighbox for the gallery-->
+<div id="Lightbox" class="lightbox" style="display:none">
+    <ul>
+        <li>
+            <img id="lightboxImage" src="" alt="image">
+            <p id="lightboxCaption"></p>
+        </li>
+    </ul>
+</div>
+  
+<section id="main">
+    
+    <!--page header for the site-->
+    <header>
+        <h3 class="name">~ Danielle Carmi</h3>
+        <div class="image center third hoverScale"><a href="index.html">
+            <img src="media/logo.png" alt="image">
+        </a></div>
+        
+        <section id="nav">
+	   		<ul>
+                <li><a class="active" href="#main">Home</a></li>
+	   			<li ><a href="#about">About</a></li>
+	   			<li ><a href="#work" >Work</a></li>
+	   			<li ><a href="#contact">Contact</a></li>
+	   			<li ><a href="files/CarmiDanielle_resume.pdf"> Resume</a></li>
+	   		</ul>
+        </section>
+    </header>
+            <div id="dividerTop" class="yellow" ></div>
+
+    <!--intro-->
+    <section id="intro" class="yellow"><div class="container">
+        <div class="right">
+            <img src="media/dragonS.png" alt="image">
+        </div>
+        
+        <div class="left center">
+            <br>
+            <h2>I am a creator.</h2>
+            <p> I have a passion for designing and creating content for web, video games, and other forms of interactive or digital media.</p>
+        </div>
+        <p class="clear"></p>
+    </div></section>
+    
+    <!--more info about me-->
+    <section id="about" class="blue"><div class="container">
+        <div class="left">
+        <img src="media/link.png" alt="image">
+        </div>
+        
+        <div class="right ">
+        <h2>About Me:</h2>
+        <p>I use various different mediums to create my work.</p>
+            <ul>
+                <li>Languages: C#, C++, JavaScript, html/css</li>
+                <li>Programs/Skills: Unity, NodeJS, Maya, Blender, Visual Studio, Photoshop, Illustrator, Paint-Tool SAI, Unreal Engine, Processing, MonoGame</li>
+                <li>Physical medium: pen/pencil drawings, acryllic, watercolor, sculpting</li>
+            </ul>
+        </div>
+            
+        <p class="clear"></p>
+    </div></section>
+    
+    <!--contact info-->
+    <section id="contact" class="pink"><div class="container">
+        <h2>How to contact me</h2>
+        <p> Email: daniellescarmi [at] gmail.com<p>
+      <p> LinkedIn: <a style="color: blue" href="http://www.linkedin.com/in/danielle-carmi/">linkedin.com/in/danielle-carmi/</a> </p>
+      <p> <a style="color: blue" href="files/CarmiDanielle_resume.pdf">~ Resume</a> </p>
+	<br><br>
+	</div></section>
+  
+    <!--some of my work-->
+    <section id="work" class="green">
+        <div class="container center">
+            <h2>My Work</h2>
+            <p> * Under Construction (more to be added) * </p>
+        </div>
+        
+        <!--generate project gallery-->
+        <div id="Gallery" class="center grid gallery"></div>
+        
+        <div class="container center">
+            <p><a href="#main" class="center">back to top.</a></p>
+        </div>
+    </section>
+        
+    <!--footer of page-->
+    <div id="dividerBottom" class="green"></div>
+    <footer>
+        <div class="container">
+
+            <p class="center">- 2018 &copy; Danielle Carmi -</p>
+            <p class="clear"></p>
+    </div></footer>
+
+    
+</section>
+</body>
+</html>
